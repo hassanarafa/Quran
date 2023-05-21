@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("مصحف"),
         systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: Colors.lightGreen[500],
+            statusBarColor: Colors.brown[600],
             statusBarIconBrightness: Brightness.light),
         backgroundColor: Colors.lightGreen[500],
       ),
