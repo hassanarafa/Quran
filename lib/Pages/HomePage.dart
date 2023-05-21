@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView.builder(
         itemCount: 10,
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         itemBuilder: (context, index) {
           return Column(
             children: [
