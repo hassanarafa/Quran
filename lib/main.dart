@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Pages/HomePage.dart';
+
 void main() {
   runApp(const Quran_App());
 }
@@ -9,6 +11,9 @@ class Quran_App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Directionality(textDirection: TextDirection.rtl, child: HomePage()),
+    );
   }
 }
