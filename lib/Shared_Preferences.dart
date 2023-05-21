@@ -9,8 +9,13 @@ Future? setSetting() async {
 }
 
 Future? getSettings() async {
-  final pref = await SharedPreferences.getInstance();
+  try {
+    final pref = await SharedPreferences.getInstance();
 
-  arabicFontSize = pref.getInt("arabicFontSize")!.toDouble();
-  quranFontSize = pref.getInt("quranFontSize")!.toDouble();
+    arabicFontSize = pref.getInt("arabicFontSize")!.toDouble();
+    quranFontSize = pref.getInt("quranFontSize")!.toDouble();
+  } catch (e) {
+    arabicFontSize = 28;
+    quranFontSize = 40;
+  }
 }
